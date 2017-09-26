@@ -1,9 +1,55 @@
-body{
+.body_with_image{
 	font-family: Georgia, serif;
 	height: 100%;
 	margin:0;
-	text-align:center;
 	width: 100%;
-	background-image: url(images/theme.jpg);
+	background-image: url(images/theme.png);
+	background-size:cover;
 	
 }
+.body_without_image{
+	background-image:none;
+}
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.navbar-logo {
+	display: inline-block;
+	text-decoration:none;
+	color:#000000;
+	text-align:left;
+	
+	}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  transition:.3s linear;
+}
+.main-start{
+	position:absolute;
+	margin: 50px;
+}
+.top_list{
+	text-align:center;
+	color:#FFFFFF;
+	position:center;
+	font-size:24px;
+}
+
