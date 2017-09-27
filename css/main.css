@@ -3,7 +3,7 @@
 	height: 100%;
 	margin:0;
 	width: 100%;
-	background-image: url(images/theme.png);
+	background-image: url(../images/theme.png);
 	background-size:cover;
 	
 }
@@ -62,10 +62,15 @@
 	margin-top:20%;
 }
 
+.top_list_container {
+	text-align: center;
+}
+
 .top_list{
 	color:#FFFFFF;
 	font-size:30px;
-	float:right;
+	display: inline-block;
+	margin-top:10%;
 	
 }
 .top_list li{
