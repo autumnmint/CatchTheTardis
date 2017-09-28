@@ -14,6 +14,8 @@
   background: rgba(255,255,255,.5);
   box-shadow: 3px 0 7px rgba(0,0,0,.3);
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar-logo {
 	display: inline-block;
@@ -26,12 +28,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  float: right;
 }
 .menu-main li {
 	display: inline-block;
 	}
-.menu-main a {
+.menu-main__a {
   text-decoration: none;
   display: block;
   position: relative;
@@ -79,6 +80,15 @@
 
 .about_image{
 	text-align:center;
+}
+.bold_span{
+	font-weight:bold;
+}
+.italic_span{
+	font-style:italic;
+}
+.highlight_link{
+	color:#87CEEB;
 }
 
 
