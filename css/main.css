@@ -32,13 +32,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  
+  
 }
-.menu-main li {
+.menu-main_item-position {
 	display: inline-block;
 }
 .menu-main__item {
   text-decoration: none;
-  display: block;
   position: relative;
   line-height: 61px;
   padding-left: 20px;
@@ -48,9 +49,20 @@
   font-weight: bold;
   color: #000000;
   transition:.3s linear;
+  
 }
 .menu-main__item_highlited-item{
-	color:#87CEEB;
+  color:#87CEEB;
+  text-decoration: none;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  transition:.3s linear;
+	
 }
 .start{
 	text-align:center;
