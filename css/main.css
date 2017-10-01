@@ -35,7 +35,7 @@
 }
 .menu-main li {
 	display: inline-block;
-	}
+}
 .menu-main__item {
   text-decoration: none;
   display: block;
@@ -66,7 +66,7 @@
 	
 	
 }
-.start__button a{
+.start__button_unstressed{
 	text-decoration: none;
 }
 
