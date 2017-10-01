@@ -95,6 +95,10 @@
 .about__content_italic{
 	font-style:italic;
 }
+.about__content{
+	margin-left:20px;
+	margin-right:20px;
+}
 
 
 
