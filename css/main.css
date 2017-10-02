@@ -38,7 +38,7 @@
 .menu-main__item {
 	display: inline-block;
 }
-.menu-main__item_passiv {
+.menu-main__item_link {
   text-decoration: none;
   position: relative;
   line-height: 61px;
@@ -51,7 +51,7 @@
   transition:.3s linear;
   
 }
-.menu-main__item_activ{
+.menu-main__item_active{
   color:#87CEEB;
   text-decoration: none;
   position: relative;
