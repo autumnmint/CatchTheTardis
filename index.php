@@ -10,12 +10,14 @@
 		<a class="top-menu__logo" href="index.php"><p>CATCH THE TARDIS</p></a>
             <?php
                 require ('php/menu.php');
-                echo Menu::getMenu($_GET['page']);
+            $page_number = isset($_GET['page']) ? $_GET['page'] : 0;
+            echo Menu::getMenu($page_number);
             ?>
 		</nav>
         <?php
             require ('php/content.php');
-            echo Content::getPage($_GET['page']);
+            $page_number = isset($_GET['page']) ? $_GET['page'] : 0;
+            Content::getPage($page_number);
         ?>
 		</body>
 		</html>
