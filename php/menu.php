@@ -10,7 +10,7 @@ class Menu {
                             $result_html .= ' menu-main__item_active">';
                         }
            else {
-               $result_html .= '"><a class="menu-main__item_link href="index.php?page=' .$i. '">';
+               $result_html .= '"><a class="menu-main__item_link" href="index.php?page=' .$i. '">';
            }
              $result_html .= Menu::$mass[$i];
              if ($i != $number) {
@@ -20,6 +20,4 @@ class Menu {
          }
          return  $result_html;
 }
-
 }
-echo Menu::getMenu(1);
