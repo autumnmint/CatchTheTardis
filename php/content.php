@@ -9,6 +9,6 @@ class Content
     );
 
     public static function getPage($page_number) {
-        return Content::$pages[$page_number];
+        return (include ('assets/' . Content::$pages[$page_number]));
     }
 }
