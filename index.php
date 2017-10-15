@@ -1,5 +1,6 @@
 <?php
 $page_number = isset($_GET['page']) ? $_GET['page'] : 0;
+require ('php/manager.php')
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,15 +20,14 @@ else {
 		<nav class="top-menu">
 		<a class="top-menu__logo" href="index.php"><p>CATCH THE TARDIS</p></a>
             <ul class="menu-main">
-            <?php
-                require ('php/menu.php');
-            echo Menu::getMenu($page_number);
+                <?php
+            echo Manager::getMenu($page_number);
             ?>
+
             </ul>
 		</nav>
         <?php
-            require ('php/content.php');
-            Content::getPage($page_number);
+            Manager::getPage($page_number);
         ?>
 		</body>
 		</html>
