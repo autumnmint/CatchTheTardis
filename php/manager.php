@@ -3,9 +3,9 @@
  class Manager {
 
     public static $pages = array(
-        0 => 'Start',
-        1 => 'About',
-        2 => 'Toplist'
+        0 => ["title" =>"Start", "href" =>"start.html"],
+        1 => ["title"=>"About", "href" => "about.html"],
+        2 => ["title"=>"Toplist", "href" => "toplist.html"]
     );
 
     public static function getMenu($number) {
@@ -19,7 +19,7 @@
             else {
                 $result_html .= '"><a class="menu-main__item_link" href="index.php?page=' .$i. '">';
             }
-            $result_html .= Manager::$pages[$i];
+            $result_html .= Manager::$pages[$i]["title"];
             if ($i != $number) {
                 $result_html .= '</a>';
             }
@@ -28,6 +28,6 @@
         return  $result_html;
     }
     public static function getPage($page_number) {
-        return (include ('assets/' . Manager::$pages[$page_number]).'.html');
+        return (include ('assets/' . Manager::$pages[$page_number]["href"]));
     }
 }
